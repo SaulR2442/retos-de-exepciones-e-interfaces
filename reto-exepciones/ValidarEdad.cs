@@ -1,8 +1,10 @@
 using System ;
 
+namespace ValidarEdad ;
+
 public class ValidarEdad 
 {
-    public static void Main(string[] args)
+    public static void Ejecutar()
     {
         Console.WriteLine("======================") ;
         Console.WriteLine("== Reto excepciones ==") ;

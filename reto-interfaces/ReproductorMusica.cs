@@ -1,9 +1,11 @@
+namespace ReproductorMusica;
+
 interface IMediaPlayer
 {
     void Play() ;
     void Pause() ;
     void Stop() ;
-    void GetCurrentTrack() ;
+    string GetCurrentTrack() ;
 }
 
 class MusicPlayer : IMediaPlayer
@@ -26,7 +28,7 @@ class MusicPlayer : IMediaPlayer
         current_track = "Sin pista" ;
     }
 
-    public GetCurrentTrack()
+    public string GetCurrentTrack()
     {
         return current_track ;
     }
