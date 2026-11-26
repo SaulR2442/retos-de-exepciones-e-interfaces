@@ -27,13 +27,17 @@ void MenuPrincipal ()
         }
      else if (opcion == 2)
         {
+            Console.WriteLine("Ingrese la siguiente cancion -> ") ;
+            string cancion = Console.ReadLine() ;
+            Console.WriteLine("====================================") ;
             MusicPlayer player = new MusicPlayer();
             Console.WriteLine("Estado inicial: " + player.GetCurrentTrack());
-            player.LoadTrack("La Vida Era Mas Corta.");
+            player.LoadTrack(cancion);
             player.Play();
             player.Pause();
             player.Stop();
             Console.WriteLine("Estado final: " + player.GetCurrentTrack());
+            Console.WriteLine("====================================") ;
         }
      else
         {
